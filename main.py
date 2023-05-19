@@ -1,3 +1,3 @@
 class main{
-    System.out.print
+    print("Welcome to the typing tester!")
 }

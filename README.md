@@ -1,1 +1,1 @@
-# APCS_Project
+Hello! My name is Dylan Kim and welcome to the typing tester. In this program, you will be able to track the accuracy of your typing
