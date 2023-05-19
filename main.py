@@ -1,2 +1,3 @@
-print("Hello world")
-print(2*9)
+class main{
+    System.out.print
+}
