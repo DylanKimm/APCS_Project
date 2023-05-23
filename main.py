@@ -9,4 +9,3 @@ extension = ((name)+"/:"+(tag))
 
 url = "/valorant/v3/matches/:region/:"
 url = url+extension 
-print(url)
