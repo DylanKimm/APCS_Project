@@ -4,7 +4,11 @@ import json
 a1 = "https://api.henrikdev.xyz/valorant/v1/account"
 a2 = "https://api.henrikdev.xyz/valorant/v1/mmr"
 a3 = "https://api.henrikdev.xyz/valorant/v3/matches"
+a4 = "https://api.henrikdev.xyz/valorant/v1/content"
+
+print("______________________________________________________________________________________\n")
 print("Welcome to the Valorant Information Center!")
+print("______________________________________________________________________________________\n")
 user = input ("What is your Valorant username? \n")
 tag = input("What is your Valorant tag? \n")
 region = input("What is your region? (eu,na,kr,ap) \n")
@@ -28,6 +32,9 @@ s2 = json.loads(t.text)
 
 xd = requests.get(a3)
 s3 = json.loads(xd.text)
+
+pm = requests.get(a4)
+s4 = json.loads(pm.text)
 
 while True:
 
@@ -58,11 +65,16 @@ while True:
 
     if check == ("rit"):
         print(s2['data']['ranking_in_tier'])
-    
-    if check == "prevmatch":
-        match_data = s3['data'][0]  # Get the first match data
 
-        map = match_data['metadata']['map']
+    if check == ("koreafy"):  
+        agent = input("What official valorant agent would you like to Koreafy?\n")
+        agent = ("'"+agent.capitalize()+"'")
+        kname = s4['characters'][0]['name'][agent]['localizedNames']['ko-KR']
+
+    if check == ("prevmatch"):
+        match_data = s3['data'][0]  
+
+        map = match_data['metadata']['map'] 
         mode = match_data['metadata']['mode']
         rounds = match_data['metadata']['rounds_played']
         game_length = match_data['metadata']['game_length']
@@ -74,3 +86,6 @@ while True:
         print("Map:", map)
         print("Rounds played:", rounds)
         print("Length of Match:", minutes, "minutes")
+
+        
+           
