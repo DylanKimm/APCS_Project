@@ -1,1 +1,3 @@
-Hello! My name is Dylan Kim and welcome to the Valorant sweat tracker! 
+Here are the inputs to put in when it asks for what data you want:
+level: Checks the level of your account
+
