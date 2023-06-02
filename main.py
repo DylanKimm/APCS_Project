@@ -62,14 +62,11 @@ while True:
     
     if check == ("mchange"):
         print(s2['data']['mmr_change_to_last_game'])
+        if ((s2['data']['mmr_change_to_last_game']) < 1):
+            print ("L")
 
     if check == ("rit"):
         print(s2['data']['ranking_in_tier'])
-
-    if check == ("koreafy"):  
-        agent = input("What official valorant agent would you like to Koreafy?\n")
-        agent = ("'"+agent.capitalize()+"'")
-        kname = s4['characters'][0]['name'][agent]['localizedNames']['ko-KR']
 
     if check == ("prevmatch"):
         match_data = s3['data'][0]  

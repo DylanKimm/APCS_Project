@@ -1,4 +1,4 @@
-Welcome to the Valorant Information Gatherer! ritcertiThis program gives miscellaneous data from your account.
+Welcome to the Valorant Information Gatherer! This program gives miscellaneous data from your account.
 Here are the inputs to put in when it asks for what data you want:
 
 - n: Stops the program from Running
